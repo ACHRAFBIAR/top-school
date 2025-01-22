@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="byad.jpg">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>À propos de Top School</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+
+    .navbar {
+      background-color: #000000;
+      border-bottom: 1px solid #000;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      color: #000;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #007bff;
+    }
+
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #000;
+      height: 100vh;
+      background: url('./byad.jpg') no-repeat center center;
+      background-size: cover;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .banner h1 span {
+      display: block;
+      font-size: 1.5rem;
+      color: #007bff;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: slideInRight 1s ease-out;
+    }
+
+    .banner .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin: 20px 0;
+      animation: bounceIn 2s;
+    }
+
+    .social-icons .icon {
+      margin: 0 10px;
+      color: #ffffff;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons .icon:hover {
+      transform: scale(1.2);
+      color: #007bff;
+    }
+
+    .about-container {
+      padding: 50px;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .about-header {
+      margin-bottom: 30px;
+    }
+
+    .about-header img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      text-align: left;
+    }
+
+    .about-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-content .highlight {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+          transform: translateX(-100%);
+      }
+      to {
+          transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+          transform: translateX(100%);
+      }
+      to {
+          transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+          transform: translateY(20px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+    }
+
+    @keyframes bounceIn {
+      0%, 20%, 40%, 60%, 80%, 100% {
+          -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+      }
+      0% {
+          opacity: 0;
+          transform: scale3d(.3, .3, .3);
+      }
+      20% {
+          transform: scale3d(1.1, 1.1, 1.1);
+      }
+      40% {
+          transform: scale3d(.9, .9, .9);
+      }
+      60% {
+          opacity: 1;
+          transform: scale3d(1.03, 1.03, 1.03);
+      }
+      80% {
+          transform: scale3d(.97, .97, .97);
+      }
+      100% {
+          opacity: 1;
+          transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="byad.jpg" alt="Top School Logo" style="width: 40px;">
+      Top School
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ABOUT.HTML">A bout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TEME.html">Èquipe
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nivou.html">Niveau
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CONTACT.HTML">Contact
+            </a>
+          </li>
+             
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="about-container">
+    <div class="about-header">
+      <img src="byad.jpg" alt="Top School Logo">
+      <h1>À propos de Top School</h1>
+    </div>
+    <div class="about-content">
+      <h2>Bienvenue à Top School</h2>
+      <p>Top School est un centre éducatif dédié à fournir une éducation de qualité à nos étudiants. Avec une expérience de <span class="highlight">11 ans</span>, nous avons établi une réputation d'excellence et de succès académique.</p>
+      <p>Notre mission est de créer un environnement d'apprentissage stimulant et enrichissant où chaque étudiant peut atteindre son plein potentiel. Nous offrons une variété de programmes académiques et de soutien pour aider nos étudiants à exceller dans leurs études.</p>
+      <p>Chez Top School, nous croyons que chaque étudiant mérite une éducation de qualité. Nous sommes fiers de nos résultats et de notre engagement envers l'excellence éducative.</p>
+      <p>Rejoignez-nous et découvrez pourquoi Top School est le choix préféré pour une éducation de qualité.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

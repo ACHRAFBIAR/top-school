@@ -1,0 +1,106 @@
+/* Styles généraux */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Section Bannière */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    background: url('png.png') no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-out;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: slideInRight 1s ease-out;
+}
+
+/* Section Niveaux */
+.levels .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.levels .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
